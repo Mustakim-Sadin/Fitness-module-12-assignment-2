@@ -864,3 +864,365 @@ body {
 }
 
 /*-- -- service style ends-- --*/
+
+/* ---- BMI cal section starts ---- */
+
+.bmi-area {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.2rem;
+  max-width: 41.9375rem;
+}
+
+@media (min-width: 576px) {
+  .bmi-area {
+    margin-top: 3.87rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .bmi-area {
+    margin-top: 5.5rem;
+  }
+}
+
+.bmi-tittle {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2.4rem;
+}
+
+@media (min-width: 576px) {
+  .bmi-tittle {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+}
+
+.bmi-description {
+  margin-top: 0.88rem;
+  text-wrap: pretty;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--white-50);
+}
+
+.bmi-table-calc-area {
+  margin-top: 2rem;
+  background-color: var(--black-out);
+}
+
+@media (min-width: 576px) {
+  .bmi-table-calc-area {
+    margin-top: 2.87rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .bmi-table-calc-area {
+    margin-top: 5.5rem;
+  }
+}
+
+.bmi-table-calc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 2.61rem;
+  padding-top: 2.38rem;
+  padding-bottom: 2.38rem;
+}
+
+@media (min-width: 576px) {
+  .bmi-table-calc-container {
+    row-gap: 3.88rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .bmi-table-calc-container {
+    flex-direction: row;
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+  }
+}
+
+.bmi-table-tittle {
+  margin-bottom: 1.44rem;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.2rem;
+}
+
+@media (min-width: 576px) {
+  .bmi-table-tittle {
+    margin-bottom: 2.87rem;
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .bmi-table-tittle {
+    margin-bottom: 3.25rem;
+  }
+}
+
+/* == bmi table == */
+
+.bmi-table,
+.bmi-table-header,
+.bmi-table-count,
+.bmi-table-catagory {
+  border-collapse: collapse;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--white-10);
+}
+
+.bmi-table-header,
+.bmi-table-count,
+.bmi-table-catagory {
+  padding-left: 1.44rem;
+  padding-right: 1.44rem;
+  padding-top: 0.94rem;
+  padding-bottom: 0.94rem;
+  text-align: left;
+}
+
+.bmi-table-header {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+
+.bmi-table-count,
+.bmi-table-catagory {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.05rem;
+  color: var(--white-50);
+}
+
+/* ---- BMI calculate area ---- */
+
+.bmi-calc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.12rem;
+}
+
+@media (min-width: 992px) {
+  .bmi-calc-container {
+    max-width: 36.125rem;
+  }
+}
+
+.bmi-calc-tittle {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.2rem;
+}
+
+@media (min-width: 576px) {
+  .bmi-calc-tittle {
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+  }
+}
+
+.bmi-calc-description {
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--white-50);
+}
+
+/* ---- BMI FORM area ---- */
+
+.bmi-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bmi-form-group {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.bmi-form-input {
+  width: 100%;
+  max-width: 100%;
+  flex: 1 1 0%;
+  border-radius: 0.5rem;
+  border-style: none;
+  background-color: var(--white-10);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: var(--white-60);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.form-select-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg opacity='0.5'%3E%3Cpath d='M6 9L12 15L18 9' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 1.5rem auto;
+  background-position: right 1.25rem top 50%;
+  background-repeat: no-repeat;
+}
+
+.bmi-form-btn {
+  width: 100%;
+  max-width: 14rem;
+  cursor: pointer;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2.12rem;
+}
+
+/* ---- BMI cal section ends ---- */
+
+/* ---- our team section starts ---- */
+
+.our-team-area {
+  margin-top: 1.2rem;
+  max-width: 41.9375rem;
+}
+
+@media (min-width: 576px) {
+  .our-team-area {
+    margin-top: 3.87rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .our-team-area {
+    margin-top: 5.5rem;
+  }
+}
+
+.our-team-tittle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2.4rem;
+}
+
+@media (min-width: 576px) {
+  .our-team-tittle {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+}
+
+.our-team-description {
+  margin-top: 0.88rem;
+  text-wrap: pretty;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--white-50);
+}
+
+/* ----  our team trainer  ---- */
+
+.our-team-trainers {
+  margin-top: 2.31rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, auto));
+  justify-content: center;
+  gap: 1.25rem;
+  border-radius: 1.125rem;
+  background-color: var(--white-10);
+  padding: 1.25rem;
+}
+
+@media (min-width: 576px) {
+  .our-team-trainers {
+    grid-template-columns: repeat(3, minmax(0, auto));
+  }
+}
+
+@media (min-width: 992px) {
+  .our-team-trainers {
+    margin-top: 3.63rem;
+  }
+}
+
+.our-team-trainer {
+  position: relative;
+  height: 17rem;
+  max-width: 20.375rem;
+  overflow: clip;
+  border-radius: 1.125rem;
+}
+
+.our-team-trainer:nth-child(1),
+.our-team-trainer:nth-child(4) {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .our-team-trainer:nth-child(1),
+  .our-team-trainer:nth-child(4) {
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .our-team-trainer:nth-child(5) {
+    grid-area: 2;
+  }
+
+  .our-team-trainer:nth-child(3) {
+    grid-area: 3;
+  }
+}
+
+.our-team-trainer-img {
+  height: auto;
+  width: 20.37rem;
+  border-radius: 1.125rem;
+}
+
+.our-team-trainer-details {
+  position: absolute;
+  left: 1.21rem;
+  bottom: 1rem;
+}
+
+.our-team-trainer-name {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1.5rem;
+}
+
+.our-team-trainer-position {
+  margin-top: 0.25rem;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.05rem;
+  color: var(--white-50);
+}
+
+/* ---- our team section ends ---- */
+
+/* ---- main section ends ---- */
