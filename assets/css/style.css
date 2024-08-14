@@ -1226,3 +1226,139 @@ body {
 /* ---- our team section ends ---- */
 
 /* ---- main section ends ---- */
+
+/* === Footer === */
+
+.footer {
+  margin-top: 4.13rem;
+  background-color: var(--white-10);
+  padding-top: 2.75rem;
+  padding-bottom: 3.56rem;
+}
+
+@media (min-width: 576px) {
+  .footer {
+    margin-top: 4.7rem;
+    padding-top: 4.12rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    margin-top: 5.5rem;
+  }
+}
+
+.footer-container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1.88rem;
+}
+
+@media (min-width: 576px) {
+  .footer-container-1 {
+    row-gap: 6.38rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-container-1 {
+    flex-direction: row;
+    justify-content: space-between;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+  }
+}
+
+.footer-content {
+  max-width: 27.75rem;
+}
+
+.footer-logo {
+  font-size: 4.375rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 5.25rem;
+  color: var(--mandarin-red);
+}
+
+.footer-description {
+  margin-top: 1.25rem;
+  max-width: 19.875rem;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--white-50);
+}
+
+@media (min-width: 576px) {
+  .footer-description {
+    max-width: 100%;
+  }
+}
+
+.footer-container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1.25rem;
+}
+
+@media (min-width: 576px) {
+  .footer-container-2 {
+    flex-direction: row;
+    column-gap: 9.5rem;
+  }
+}
+
+.footer-link-tittle {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  padding-bottom: 2.44rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1.25rem;
+}
+
+.footer-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  color: var(--white-50);
+}
+
+.footer-terms-line {
+  margin-top: 4.5rem;
+  height: 0.05rem;
+  background-color: var(--white-10);
+  height: 2px;
+}
+
+@media (min-width: 992px) {
+  .footer-terms-line {
+    margin-top: 4.95rem;
+  }
+}
+
+.footer-terms {
+  margin-top: 2.5rem;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--white-50);
+}
+
+@media (min-width: 576px) {
+  .footer-terms {
+    text-align: center;
+  }
+}
