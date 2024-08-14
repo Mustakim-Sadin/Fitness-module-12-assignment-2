@@ -767,3 +767,100 @@ body {
 }
 
 /* ---- run section ends ---- */
+
+/*-- -- service style starts-- --*/
+.service {
+  margin-top: 4.13rem;
+  margin-bottom: 4.13rem;
+}
+@media screen and (min-width: 576px) {
+  .service {
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .service {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+  }
+}
+.service_tittle {
+  color: #fff;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+}
+.service_desc {
+  max-width: 41.93rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.01875rem;
+  padding-bottom: 2.31rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .service_desc {
+    padding-bottom: 3.62rem;
+  }
+}
+.service_area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (min-width: 576px) {
+  .service_area {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .service_area {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.service_card {
+  width: 100%;
+  height: 600px;
+  background-color: var(--white-50);
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .service_card {
+    width: 560px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.card_content {
+  padding-left: 1rem;
+}
+.service_card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+.card_tittle {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-bottom: 14px;
+}
+.card_desc {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+/*-- -- service style ends-- --*/
